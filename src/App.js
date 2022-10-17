@@ -1,13 +1,22 @@
-import Content from "./Content";
-import Footer from "./Footer";
-import Header from "./Header";
+import 'antd/dist/antd.css'
+import SideBar from "./SideBar";
+import MyHeader from "./MyHeader";
+import { Layout } from "antd";
+import MyContent from "./MyContent";
+import React from "react";
+import MyFooter from './MyFooter';
 
 function App() {
   return (
     <>
-    <Header></Header>
-    <Content></Content>
-    <Footer></Footer>
+        <Layout style={{ height:'max-content' }}>
+          <SideBar />
+          <Layout className="site-layout">
+            <MyHeader />
+            <MyContent />
+            <MyFooter/>
+          </Layout>
+        </Layout>
     </>
   );
 }
