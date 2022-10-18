@@ -9,7 +9,7 @@ import MyFooter from './MyFooter';
 function App() {
   return (
     <>
-        <Layout style={{ height:'max-content' }}>
+        <Layout style={{minHeight:'936px'}}>
           <SideBar />
           <Layout className="site-layout">
             <MyHeader />
